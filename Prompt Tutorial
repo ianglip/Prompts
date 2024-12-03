@@ -1,0 +1,20 @@
+1. For receiving excellent responses for your prompts, ensure you follow this syntax, in any order:
+[ROLE] [AFFIRM] [CONTEXT] [TASK] [THEME]
+
+[ROLE] is intended to prepare the model on the scope of intelligence regarding your workflow.
+
+Example:
+```You are an expert in Python.```
+
+[AFFIRM] is less necessary. It does 2 things:
+
+1) Further magnify the scope of your workflow
+2) Gaslight the AI into confidence in its response 
+
+Example:
+```You have 10,000 hours of experience in webscraping.```
+
+[CONTEXT] is where you provide everything the model needs to know in order to properly respond. This is where you have to think about what context TO include (so that the model accomplishes all goals in its response on the first try), and what context NOT TO include (so that the model does not get its attention lost on certain keywords).
+
+Example:
+```I want 
