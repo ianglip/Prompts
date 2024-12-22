@@ -1,16 +1,9 @@
-For receiving excellent responses for your prompts, ensure you follow this syntax, in any order:
-[ROLE] [CONTEXT] [TASK] [THEME]
+For complex prompts, you should always follow this syntax: [ROLE], [CONTEXT], [TASK]. Here are how these work:
 
-
-[ROLE] is intended to prepare the model on the scope of intelligence regarding your workflow.
+[ROLE] is intended to prepare the model on the scope of intelligence regarding your workflow. Providing an outrageous statement and/or figure of its expertise can help "gaslight" the model into generating a more expert response.
 
 Example:
-```You are an expert in HTML.```
-
-[AFFIRM] isn't always necessary, but you can include it in the role. It magnifies the scope of your response to a high skill level.
-
-Example:
-```You have 10,000 hours of experience in html code.```
+```You are an expert in HTML with over 100,000 hours of experience in HTML coding.```
 
 [CONTEXT] is where you provide everything the model needs to know in order to properly respond. This is where you have to think about what context TO include (so that the model accomplishes all goals in its response on the first try), and what context NOT TO include (so that the model does not get its attention lost on certain keywords).
 
@@ -20,21 +13,19 @@ Example:
 [TASK] is where you make your requests. Provide tasks in sequential order, delimited with "Then". Adding considerations for logic, and the standard "take a deep breath and ..." may improve results, especially when using o1, providing it extra things to consider "thinking" about.
 
 Example:
-```Take a deep breath and think about the goals. Then consider the physics involved with platform gameplay. Then consider the length and complexity of such a code. Then provide the script for this code.```
+```Take a deep breath and think about the goals. Then consider the physics involved with platform gameplay. Then consider the length and complexity of such a code. Then consider what the user will see when the code is ran. Then provide a complex and detailed script for this code, with all functions requested in the context section.```
 
 TIP: Using markdown format also improves responses, such as numbering, bullets, headers, bold/italics, etc.
 
 Altogether:
-
-
 ```
 # ROLE
-You are an expert in **HTML** and you have **10,000 hours** of experience in html code.
+You are an expert in HTML with over 100,000 hours of experience in HTML coding.
 
 # CONTEXT
-I want a 2-D platform game that works entirely in an html browser. I want it to use sprites, colors, and elements similar to Mario. It must run without any external downloads. It uses publicly available code and images for functions and sprites. it should have elements that make it fun like coins, gainable lives, and boosts, and elements for challenge like dangerous NPCs and pitfalls.
+I want a 2-D platform game that works entirely in an html browser. I want it to use sprites, colors, and elements similar to **Mario**. It must run without any external downloads. It uses publicly available code and images for functions and sprites. it should have elements that make it fun like coins, gainable lives, and boosts, and elements for challenge like dangerous NPCs and pitfalls.
 
 # TASK
-Take a deep breath and think about the goals. Then consider the **physics** involved with platform gameplay. Then consider the length and complexity of such a code. Then consider what the user will **see** when the code is ran. Then provide a **complex**, **detailed** script for this code.
+Take a deep breath and think about the goals. Then consider the **physics** involved with platform gameplay. Then consider the length and complexity of such a code. Then consider what the user will **see** when the code is ran. Then provide a **complex** and **detailed** script for this code, with **all** functions requested in the context section.
 ```
 
