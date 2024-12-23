@@ -1,7 +1,9 @@
 For complex prompts, you should always follow this syntax: [ROLE], [CONTEXT], [TASK]. Here are how these work:
 
 [ROLE] is where you prepare the model on the scope of intelligence regarding your workflow. Providing an outrageous statement and/or figure of its expertise can help "gaslight" the model into generating a more expert response.
+
 [CONTEXT] is where you provide everything the model needs to know in order to properly respond. This is where you have to think about what context TO include (so that the model accomplishes all goals in its response on the first try), and what context NOT TO include (so that the model does not get its attention lost on certain keywords).
+
 [TASK] is where you make your requests. Provide tasks in sequential order, delimited with "Then". Adding considerations for logic, and the standard "take a deep breath and ..." may improve results, especially when using o1, providing it extra things to consider "thinking" about.
 MARKDOWN: Using markdown format also improves responses, such as numbering, bullets, headers, bold/italics, etc.
 
@@ -16,4 +18,3 @@ I want a 2-D platform game that works entirely in an html browser. I want it to 
 # TASK
 Take a deep breath and think about the goals. Then consider the **physics** involved with platform gameplay. Then consider the length and complexity of such a code. Then consider what the user will **see** when the code is ran. Then provide a **complex** and **detailed** script for this code, with **all** functions requested in the context section.
 ```
-
