@@ -1,20 +1,63 @@
-For complex prompts, you should always follow this syntax: [ROLE], [CONTEXT], [TASK]. Here are how these work:
+For complex prompts, you should always follow this syntax: [ROLE], [CONTEXT], [TASK], [EXAMPLES].
 
 [ROLE] is where you prepare the model on the scope of intelligence regarding your workflow. Providing an outrageous statement and/or figure of its expertise can help "gaslight" the model into generating a more expert response.
 
 [CONTEXT] is where you provide everything the model needs to know in order to properly respond. This is where you have to think about what context TO include (so that the model accomplishes all goals in its response on the first try), and what context NOT TO include (so that the model does not get its attention lost on certain keywords).
 
 [TASK] is where you make your requests. Provide tasks in sequential order, delimited with "Then". Adding considerations for logic, and the standard "take a deep breath and ..." may improve results, especially when using o1, providing it extra things to consider "thinking" about.
+
+[EXAMPLES] are extremely important. Show the model what should happen to a, b, c, when x, y, z, etc. Not doing providing examples is called "0-shot", a big challenge for models on complex tasks. My example doesn't use any real examples - it just says to refer to some. It's good to attach examples of what you want to see, or write out examples of some expected results to be returned given certain cases..
+
 MARKDOWN: Using markdown format also improves responses, such as numbering, bullets, headers, bold/italics, etc.
 
 Altogether:
 ```
-# ROLE
-You are an expert in HTML with over 100,000 hours of experience in HTML coding.
 
-# CONTEXT
-I want a 2-D platform game that works entirely in an html browser. I want it to use sprites, colors, and elements similar to **Mario**. It must run without any external downloads. It uses publicly available code and images for functions and sprites. it should have elements that make it fun like coins, gainable lives, and boosts, and elements for challenge like dangerous NPCs and pitfalls.
+# HTML GAME SCRIPT
 
-# TASK
-Take a deep breath and think about the goals. Then consider the **physics** involved with platform gameplay. Then consider the length and complexity of such a code. Then consider what the user will **see** when the code is ran. Then provide a **complex** and **detailed** script for this code, with **all** functions requested in the context section.
+## ROLE
+1. You are a world-renowned expert in HTML with over **100,000 hours of experience** in HTML coding.
+2. You have a deep understanding of game design principles, including sprite animation, physics-based interactions, and HTML/CSS/JavaScript integration.
+
+## CONTEXT
+1. The goal is to create a **2-D platform game** that works entirely in an HTML browser.
+2. The game should feature:
+   - **Sprites**: Characters resembling cartoon people and mushrooms.
+   - **Fun elements**: Including coins, gainable lives, and power-ups.
+   - **Challenging elements**: Such as dangerous NPCs and pitfalls.
+3. The user experience is key, with an emphasis on visually appealing designs and smooth gameplay mechanics.
+
+## TASK
+To achieve this, carefully follow these steps:
+
+1. **Understand the Context**:
+   - Break down the problem into smaller, logical parts to address each requirement comprehensively.
+   - Identify the physics and mechanics critical to platform gameplay, such as jumping, collisions, and scrolling backgrounds.
+
+2. **Consider the Complexity**:
+   - Balance the code's functionality with readability and modularity, ensuring future enhancements are manageable.
+
+3. **Think Like the End-User**:
+   - Visualize what the user will **see** and interact with when the game is running.
+   - Ensure elements like sprite animations, coin collection, and NPC interactions are intuitive and engaging.
+
+4. **Utilize Examples**:
+   - Refer to established 2-D platformer designs for inspiration.
+   - Incorporate "few-shot learning" by including snippets for common mechanics (e.g., sprite movement or collision detection).
+
+5. **Provide a Detailed Script**:
+   - Deliver a **complete, modular script** that integrates HTML, CSS, and JavaScript seamlessly.
+   - Use comments and clear sectioning to explain each part of the code.
+
+6. **Iterate and Improve**:
+   - Build in room for feedback by structuring the code for easy updates.
+   - Anticipate common issues and solve them proactively (e.g., ensuring cross-browser compatibility).
+
+## OUTPUT REQUIREMENTS
+1. The final script must include:
+   - Complete functionality for the specified game features.
+   - Inline comments explaining key sections and logic.
+   - Suggestions for further enhancements or optimization.
+2. The game must run in an HTML browser without requiring external tools or frameworks beyond basic web standards.
+
 ```
